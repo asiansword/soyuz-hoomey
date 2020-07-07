@@ -157,6 +157,9 @@ footer .logo {
   }
   }
 @media (max-width: 900px) {
+  body {
+    font-size: 20px;
+  }
   h2 {
     font-size: 2.5vw;
   }
