@@ -1,0 +1,170 @@
+body {
+  background: #5f9c97;
+}
+.opening {
+  height: 80vh;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #dfd563;
+  align-items: center;
+}
+h1 {
+  display: block;
+  float: left;
+  border-color: #323232;
+  font-size: 2.5vw;
+  text-align: center;
+  color: #323232;
+  font-family: Montserrat, sans-serif;
+  font-weight: light;
+}
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.7vw;
+  font-weight: 600;
+}
+h3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.7vw;
+  font-weight: 600;
+  text-align: center;
+}
+.navbar {
+  background-color: #5f9c97;
+}
+.navbar-brand {
+  font-family: "EFN Malowany", sans-serif;
+  font-size: 2em;
+  color: #dfd563;
+}
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: #dfd563;
+    border:none;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #5f9c97;
+    margin-bottom: 5px;
+}
+.header {
+  height: 50vh;
+}
+.main-image {
+  display: block;
+  width: 75%;
+  height: auto;
+  margin: auto;
+}
+.nav-link {
+  color: #dfd563;
+}
+.nav-item .active {
+  background-color: #80c349 !important;
+}
+.news-preview {
+  background-color: #dfd563;
+}
+.article {
+  background-color: white;
+  border-radius: 5%;
+}
+.article-header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.article-preview {
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+}
+.article-page {
+  margin-left: auto;
+  margin-right: auto;
+}
+.card {
+  display: flex;
+  height: 100%;
+}
+.card-body {
+  height: 100%;
+}
+.card img {
+  height: 20em;
+  object-fit: cover;
+  max-width: 100%;
+}
+.card p {
+  height: 10em;
+  overflow: hidden;
+}
+.card a {
+  display: inline-block;
+  align-self: flex-end;
+}
+.image-cropper {
+    width: 15vw;
+    height: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 0.1em solid #dfd563;
+}
+.profile-pic {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  height: 31vw;
+  width: auto;
+}
+.greeting {
+  background-color: white;
+  border-radius: 5%;
+}
+.signature {
+  text-align: right;
+  font-style: italic;
+}
+footer {
+  height: 10vh;
+  text-align: center;
+}
+footer a {
+  color: #dfd563;
+}
+footer .logo {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+@font-face {
+ font-family: "EFN Malowany";
+ src: url("../fonts/EFN Malowany.ttf");
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 3vw;
+  }
+  }
+@media (max-width: 900px) {
+  h2 {
+    font-size: 2.5vw;
+  }
+  @media (min-width: 1200px) {
+    h2 {
+      font-size: 2vw;
+    }
+    .opening {
+      height: 65vh;
+    }
+    }
