@@ -203,7 +203,7 @@ footer .logo {
     font-size: 3rem;
   }
 }
-@media (max-width: 1080px) {
+@media (max-width: 1000px) {
   body {
     font-size: 350%;
   }
