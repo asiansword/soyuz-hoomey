@@ -1,8 +1,12 @@
+html {
+  font-size: 62%;
+}
 body {
   background: #5f9c97;
+  font-size: 1.8rem;
 }
 .opening {
-  height: 80vh;
+  /* height: 80vh; */
   width: 100%;
   padding: 0px;
   margin: 0px;
@@ -21,12 +25,12 @@ h1 {
 }
 h2 {
   font-family: Montserrat, sans-serif;
-  font-size: 1.7vw;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 h3 {
   font-family: Montserrat, sans-serif;
-  font-size: 1.7vw;
+  font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
 }
@@ -52,7 +56,8 @@ h3 {
     margin-bottom: 5px;
 }
 .header {
-  height: 50vh;
+  /* height: 50vh; */
+  clear: both;
 }
 .main-image {
   display: block;
@@ -66,12 +71,16 @@ h3 {
 .nav-item .active {
   background-color: #80c349 !important;
 }
+.news-header {
+  margin-right: -30px;
+  margin-left: -30px;
+}
 .news-preview {
   background-color: #dfd563;
 }
 .article {
   background-color: white;
-  border-radius: 5%;
+  border-radius: 2%;
 }
 .article-header img {
   display: block;
@@ -128,7 +137,7 @@ h3 {
 }
 .greeting {
   background-color: white;
-  border-radius: 5%;
+  border-radius: 2%;
 }
 .signature {
   text-align: right;
@@ -137,6 +146,7 @@ h3 {
 footer {
   height: 10vh;
   text-align: center;
+  font-size: 1.6rem;
 }
 footer a {
   color: #dfd563;
@@ -146,12 +156,15 @@ footer .logo {
   width: 70%;
   height: auto;
 }
+.footer-copyright {
+  background-color: #3f7c77;
+}
 @font-face {
  font-family: "EFN Malowany";
  src: url("../fonts/EFN Malowany.ttf");
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   h2 {
     font-size: 3vw;
   }
@@ -162,12 +175,11 @@ footer .logo {
   }
   h2 {
     font-size: 2.5vw;
+  } */
+@media (max-width: 1200px) {
+  body {
+    font-size: 170%;
   }
-  @media (min-width: 1200px) {
-    h2 {
-      font-size: 2vw;
-    }
-    .opening {
-      height: 65vh;
-    }
-    }
+  /* h2 {
+    font-size: 2vw;
+  } */
