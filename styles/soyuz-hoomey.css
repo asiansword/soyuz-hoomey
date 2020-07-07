@@ -99,7 +99,7 @@ h3 {
   margin-right: auto;
 }
 .btn {
-  font-size: 1.8rem;s
+  font-size: 1.8rem;
 }
 .card {
   display: flex;
@@ -185,5 +185,5 @@ footer .logo {
   }
   .article-preview {
     height: 20vh;
-}
+  }
 }
