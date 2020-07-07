@@ -198,6 +198,9 @@ footer .logo {
   .btn {
     font-size: 3rem;
   }
+footer {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 1000px) {
   body {
@@ -219,6 +222,9 @@ footer .logo {
     height: 20vh;
   }
   .btn {
+    font-size: 3rem;
+  }
+footer {
     font-size: 3rem;
   }
 }
