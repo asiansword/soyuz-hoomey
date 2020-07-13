@@ -34,6 +34,9 @@ h3 {
   text-align: center;
 }
 h5 {
+  font-family: Montserrat, sans-serif;
+  height: 3.8em;
+  overflow: hidden;
   font-size: 2.5rem;
 }
 .navbar {
