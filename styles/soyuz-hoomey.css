@@ -100,9 +100,12 @@ h5 {
 #saradak active {
   border: 1px solid #ffffff;
 }
-.news-header {
-  margin-right: -30px;
-  margin-left: -30px;
+.page-header {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  font-size: 4rem;
+  font-weight: 300;
 }
 .news-preview {
   background-color: #dfd563;
@@ -133,27 +136,24 @@ h5 {
   display: flex;
   height: 100%;
 }
+.card-title {
+  height: 6rem;
+}
 .card-body {
   height: 100%;
 }
 .card img {
-  height: 20em;
+  height: 10em;
   object-fit: cover;
   max-width: 100%;
 }
 .card p {
-  height: 10em;
+  height: 3em;
   overflow: hidden;
 }
 .card a {
   display: inline-block;
   align-self: flex-end;
-}
-.card-media p {
-  height: auto;
-}
-.card-media .card-title {
-  height: auto;
 }
 .video-container {
   position: relative;
@@ -247,8 +247,14 @@ footer .logo {
   h5 {
     font-size: 3.5rem;
   }
+  .page-header {
+    font-size: 6rem;
+  }
   .article-preview {
     height: 20vh;
+  }
+  .card-title {
+    height: 8rem;
   }
   .btn {
     font-size: 3rem;
@@ -288,8 +294,14 @@ footer .logo {
   h5 {
     font-size: 3.5rem;
   }
+  .page-header {
+    font-size: 6rem;
+  }
   .article-preview {
     height: 20vh;
+  }
+  .card-title {
+    height: 8rem;
   }
   .btn {
     font-size: 3rem;
