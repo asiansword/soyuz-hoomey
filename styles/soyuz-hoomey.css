@@ -47,6 +47,9 @@ h5 {
   font-size: 2em;
   color: #dfd563;
 }
+.navbar-brand:hover {
+  color: #ffffff;
+}
 .navbar-toggler{
     width: 6rem;
     height: 5.3rem;
@@ -72,11 +75,30 @@ h5 {
   height: auto;
   margin: auto;
 }
+.nav-item {
+  border: 1px solid rgb(223, 213, 99, .3);
+  border-radius: 10%;
+}
 .nav-link {
   color: #dfd563;
 }
+.nav-link:hover {
+  color: #ffffff;
+}
 .nav-item .active {
+  border: 0;
   background-color: #80c349 !important;
+}
+#saradak {
+  background-color: #d25435;
+  border: 1px solid rgb(223, 213, 99, .3);
+  border-radius: 10%;
+}
+#saradak a {
+  color: #ffffff;
+}
+#saradak active {
+  border: 1px solid #ffffff;
 }
 .news-header {
   margin-right: -30px;
@@ -127,6 +149,23 @@ h5 {
   display: inline-block;
   align-self: flex-end;
 }
+.card-media p {
+  height: auto;
+}
+.card-media .card-title {
+  height: auto;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+iframe{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
 .image-cropper {
     width: 15vw;
     height: 15vw;
@@ -142,12 +181,17 @@ h5 {
   display: inline;
   margin-left: auto;
   margin-right: auto;
-  height: 31vw;
+  margin-top: -2vw;
+  height: 21vw;
   width: auto;
 }
 .greeting {
   background-color: white;
   border-radius: 2%;
+  font-size: 1.5rem;
+}
+.greeting h3 {
+  font-size: 2rem;
 }
 .signature {
   text-align: right;
@@ -157,6 +201,14 @@ footer {
   height: 100%;
   text-align: center;
   font-size: 1.6rem;
+}
+footer h5 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  height: auto;
 }
 footer a {
   color: #dfd563;
@@ -201,8 +253,23 @@ footer .logo {
   .btn {
     font-size: 3rem;
   }
-footer {
+  footer {
+      font-size: 3rem;
+    }
+  .image-cropper {
+      width: 45vw;
+      height: 45vw;
+    }
+  .profile-pic {
+    margin-top: -3vw;
+    height: 60vw;
+    width: auto;
+  }
+  .greeting {
     font-size: 3rem;
+  }
+  .greeting h3 {
+    font-size: 4rem;
   }
 }
 @media (max-width: 1000px) {
@@ -227,7 +294,22 @@ footer {
   .btn {
     font-size: 3rem;
   }
-footer {
+  footer {
     font-size: 3rem;
+  }
+  .image-cropper {
+      width: 45vw;
+      height: 45vw;
+    }
+  .profile-pic {
+    margin-top: -3vw;
+    height: 60vw;
+    width: auto;
+  }
+  .greeting {
+    font-size: 3rem;
+  }
+  .greeting h3 {
+    font-size: 4rem;
   }
 }
