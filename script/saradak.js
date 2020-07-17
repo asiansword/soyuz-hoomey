@@ -44,6 +44,6 @@ participants.forEach(function(item, i, array) {
       participants[partNum].classList.remove("participant-active");
     }
     this.classList.add("participant-active");
-    iframe.setAttribute("src", videoSources[i]);
+    iframe.setAttribute("src", videoSources[i] + "?rel=0");
   });
 });
