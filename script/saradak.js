@@ -1,42 +1,27 @@
 var participants = document.querySelectorAll(".participant");
+var ageOrigin = document.querySelectorAll(".participant-list span")
 var iframe = document.querySelector("iframe");
 
-var videoSources = ["https://www.youtube.com/embed/T8VL2-I5-UI?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/pTXB71AfJHg?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/KRdRx9s_6IM?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/9jK4lRtC69Q?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/AFbKKMpPcrQ?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/2Rs2cgWWtak?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/m84Q34E8MBY?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/Q54TRSuDkho?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/gbZNHyYDEXY?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/A-c1N4fV6Rs?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/RAk8eWsR_Gs?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/QCDX2Mdechc?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/bQ1vZ6l1H-8?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/hGwXNNVG28Q?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/LWrp8VQlMiI?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/aQm9NhvmXA8?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/5Ro9R7aaPhc?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/Pc0_HWvetXw?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/iBLrCETnNK0?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/a53_i1m6UjI?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/B3oiDlhZjxs?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/zyXQRxsscVw?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/seqEwHed_9Q?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/ptfTV_eMhYs?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/tUuSyG8s7zs?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/Hq6WxDzou6k?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/Y1Tb7Va63Io?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/7I9Snq91cVE?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/tqjeMAdEYPY?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/rKP8aXu0MoM?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/NEuYRP7uJls?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/Ga8ZoW5dBKA?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/Tv-6163LT-E?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/KlvhRrAq9Js?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/MUM-3UYXD3w?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG",
-                    "https://www.youtube.com/embed/WchvEF8_PsQ?list=PLuaCJ79vD1WLoXylWF5cFmectZFWE3jUG"];
+var videoSources = ["https://www.youtube.com/embed/FXnlJXM1rVQ",
+                    "https://www.youtube.com/embed/p_h4W9XxH8Q",
+                    "https://www.youtube.com/embed/04EHBGtTjfo",
+                    "https://www.youtube.com/embed/iKfFySPkQOM",
+                    "https://www.youtube.com/embed/0y3eKvmZsPg",
+                    "https://www.youtube.com/embed/nijaKp-kJ2s",
+                    "https://www.youtube.com/embed/f5e1Ann3wlE",
+                    "https://www.youtube.com/embed/eaSVTaXngDE",
+                    "https://www.youtube.com/embed/7jIY09fdLJg",
+                    "https://www.youtube.com/embed/RYdYYTKsaZE",
+                    "https://www.youtube.com/embed/cwFfQawZN_s",
+                    "https://www.youtube.com/embed/SFCWYs5gmcE",
+                    "https://www.youtube.com/embed/xxWZiKH-678",
+                    "https://www.youtube.com/embed/HxdqQPUwoOU",
+                    "https://www.youtube.com/embed/vA7MCDtN2Ww",
+                    "https://www.youtube.com/embed/sP2QjQh9zTg",
+                    "https://www.youtube.com/embed/eFWAbuEwHXU",
+                    "https://www.youtube.com/embed/Lmprs2F7E54",
+                    "https://www.youtube.com/embed/3zKNMatrGBk",
+                    "https://www.youtube.com/embed/lRfJYA3vuhY"];
 
 participants.forEach(function(item, i, array) {
   item.addEventListener("click", function(){
@@ -44,6 +29,15 @@ participants.forEach(function(item, i, array) {
       participants[partNum].classList.remove("participant-active");
     }
     this.classList.add("participant-active");
+    for (var ageNum = 0; ageNum < ageOrigin.length; ageNum++) {
+      ageOrigin[ageNum].classList.remove("age-origin-show");
+      ageOrigin[ageNum].classList.add("age-origin-hide");
+    }
+    ageOrigin[i].classList.add("age-origin-show");
     iframe.setAttribute("src", videoSources[i] + "?rel=0");
   });
 });
+
+// <iframe width="1086" height="611" src="https://www.youtube.com/embed/dsM_wQR6hDA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+// <iframe width="1086" height="611" src="https://www.youtube.com/embed/YvEMPX8k4gE?list=PLuaCJ79vD1WI7IRTzkmLRALVrxMYDm3I1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+// <iframe width="1086" height="611" src="https://www.youtube.com/embed/dsM_wQR6hDA?list=PLuaCJ79vD1WI7IRTzkmLRALVrxMYDm3I1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
