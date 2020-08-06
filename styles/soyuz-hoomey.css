@@ -87,6 +87,7 @@ h5 {
 }
 .nav-item .active {
   border: 0;
+  border-radius: 10px;
   background-color: #80c349 !important;
 }
 #saradak {
