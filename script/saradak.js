@@ -64,7 +64,8 @@ var videoSources = ["https://www.youtube.com/embed/FXnlJXM1rVQ",
                     "https://www.youtube.com/embed/CR2UENNojdE",
                     "https://www.youtube.com/embed/QsBpf5-8dk4",
                     "https://www.youtube.com/embed/7hvqjJz-Krc",
-                    "https://www.youtube.com/embed/z6lWYin2X5Y"];
+                    "https://www.youtube.com/embed/z6lWYin2X5Y",
+                    "https://www.youtube.com/embed/zIpCTj-goxk"];
 
 participants.forEach(function(item, i, array) {
   item.addEventListener("click", function(){
