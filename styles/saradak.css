@@ -54,10 +54,10 @@ h5 {
   overflow-y: scroll;
 }
 .add-list {
-  max-height: 14vh;
+  max-height: 13vh;
   overflow-y: scroll;
 }
-.additional-material {
+.additional-materials-list {
   max-height: 20vh;
   padding: 10px;
   background-color: rgb(0, 0, 0, .5);
@@ -106,6 +106,16 @@ ul {
 }
 .video {
   padding: 10px;
+}
+.additional-material {
+  height: 80vh;
+  padding: 5em;
+}
+a {
+  color: #dfd563;
+}
+a:hover {
+  color: white;
 }
 @media (max-width: 1000px) {
   .saradak-header {

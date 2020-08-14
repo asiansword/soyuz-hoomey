@@ -51,17 +51,17 @@ h5 {
   color: #ffffff;
 }
 .navbar-toggler{
-    width: 6rem;
-    height: 5.3rem;
-    background-color: #dfd563;
-    border:none;
+  width: 6rem;
+  height: 5.3rem;
+  background-color: #dfd563;
+  border:none;
 }
 .navbar-toggler .line{
-    width: 100%;
-    float: left;
-    height: 0.3rem;
-    background-color: #5f9c97;
-    margin-bottom: 0.7rem;
+  width: 100%;
+  float: left;
+  height: 0.3rem;
+  background-color: #5f9c97;
+  margin-bottom: 0.7rem;
 }
 .docs {
   font-size: 1.8rem;
@@ -116,6 +116,9 @@ h5 {
   background-color: white;
   border-radius: 2%;
 }
+.news-preview:last-of-type .article{
+  margin-bottom: 2em;
+}
 .article-header img {
   display: block;
   width: 100%;
@@ -161,23 +164,23 @@ h5 {
   position: relative;
   padding-bottom: 56.25%;
 }
-iframe{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .image-cropper {
-    width: 15vw;
-    height: 15vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3em;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 0.1em solid #dfd563;
+  width: 15vw;
+  height: 15vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 0.1em solid #dfd563;
 }
 .profile-pic {
   display: inline;
