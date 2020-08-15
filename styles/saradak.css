@@ -117,6 +117,16 @@ a {
 a:hover {
   color: white;
 }
+.tagline {
+  color: #5f9c97;
+}
+.tagline:hover {
+  color: #dfd563;
+  text-decoration: underline;
+}
+.tagline:active {
+  color: darkblue;
+}
 @media (max-width: 1000px) {
   .saradak-header {
     padding-top: 1vh;
